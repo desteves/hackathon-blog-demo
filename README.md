@@ -19,6 +19,8 @@ python3 -m venv .venv
 - `data/wonders_facts.csv` — one row per fact, joined to `wonders.csv` on `name`.
 - `test_connection.py` — sanity-checks the `MONGODB_URI` connection.
 - `test_vector_search.py` — runs a `$vectorSearch` query against `facts_nested_vector_index` and prints matches.
+- `test_mongodump.sh` — dumps `wonders_db` to `./dump` using `mongodump`.
+- `test_mongoexport.sh` — exports the `wonders` collection to `./export/wonders.json` using `mongoexport`.
 
 ## Data model
 
@@ -102,6 +104,26 @@ Showing results that are current wonders with a relevance score of 0.6 or above:
 ```
 
 (exact scores and matches depend on the query and current data)
+
+### mongodump test
+
+Requires the [MongoDB Database Tools](https://www.mongodb.com/docs/database-tools/) (`mongodump`) installed locally.
+
+```bash
+./test_mongodump.sh
+```
+
+Dumps `wonders_db` (BSON + metadata) to `./dump/wonders_db`. The output is committed to this repo as a sample snapshot.
+
+### mongoexport test
+
+Requires the [MongoDB Database Tools](https://www.mongodb.com/docs/database-tools/) (`mongoexport`) installed locally.
+
+```bash
+./test_mongoexport.sh
+```
+
+Exports the `wonders` collection as a JSON array to `./export/wonders.json` (human-readable, unlike `mongodump`'s BSON) — handy for eyeballing content or diffing against `data/wonders.csv` / `data/wonders_facts.csv`. The output is committed to this repo as a sample snapshot.
 
 ## Notes
 
