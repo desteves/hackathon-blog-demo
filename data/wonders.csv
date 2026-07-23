@@ -1,0 +1,13 @@
+name,location,latitude,longitude,category,year_built,height_m,designated_wonder_year,wonder_list,is_current_wonder,status_years
+Great Pyramid of Giza,Egypt,29.9792,31.1342,Ancient,-2560,146,-200,Ancient Seven Wonders (honorary; only one still standing),TRUE,-200-present
+Great Wall of China,China,40.4319,116.5704,Ancient/Medieval,-700,8,2007,New7Wonders of the World,TRUE,2007-present
+Petra,Jordan,30.3285,35.4444,Ancient,-300,40,2007,New7Wonders of the World,TRUE,2007-present
+Colosseum,Italy,41.8902,12.4922,Ancient,80,48,2007,New7Wonders of the World,TRUE,2007-present
+Chichen Itza,Mexico,20.6843,-88.5678,Ancient,600,30,2007,New7Wonders of the World,TRUE,2007-present
+Machu Picchu,Peru,-13.1631,-72.5450,Ancient,1450,2430,2007,New7Wonders of the World,TRUE,2007-present
+Taj Mahal,India,27.1751,78.0421,Medieval,1653,73,2007,New7Wonders of the World,TRUE,2007-present
+Christ the Redeemer,Brazil,-22.9519,-43.2105,Modern,1931,38,2007,New7Wonders of the World,TRUE,2007-present
+Angkor Wat,Cambodia,13.4125,103.8670,Medieval,1150,65,,New7Wonders finalist (not selected),FALSE,N/A
+Stonehenge,United Kingdom,51.1789,-1.8262,Prehistoric,-2500,9,,None (UNESCO World Heritage Site only),FALSE,N/A
+Hagia Sophia,Turkey,41.0086,28.9802,Ancient/Medieval,537,55,,None (UNESCO World Heritage Site only),FALSE,N/A
+Easter Island Moai,Chile,-27.1250,-109.2769,Ancient,1250,10,,None (UNESCO World Heritage Site only),FALSE,N/A

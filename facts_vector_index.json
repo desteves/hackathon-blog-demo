@@ -1,0 +1,25 @@
+{
+  "database": "wonders_db",
+  "collection": "wonders",
+  "name": "facts_nested_vector_index",
+  "type": "vectorSearch",
+  "definition": {
+    "fields": [
+      {
+        "type": "vector",
+        "path": "facts.embedding",
+        "numDimensions": 512,
+        "similarity": "cosine"
+      },
+      {
+        "type": "filter",
+        "path": "category"
+      },
+      {
+        "type": "filter",
+        "path": "wonder_status.is_current"
+      }
+    ],
+    "nestedRoot": "facts"
+  }
+}
